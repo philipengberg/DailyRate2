@@ -17,6 +17,7 @@
 		DE52D32721C51FA400D7947C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE52D32521C51FA400D7947C /* LaunchScreen.storyboard */; };
 		DE52D33221C51FA400D7947C /* DailyRate2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE52D33121C51FA400D7947C /* DailyRate2Tests.swift */; };
 		DE52D33D21C51FA400D7947C /* DailyRate2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE52D33C21C51FA400D7947C /* DailyRate2UITests.swift */; };
+		DE52D34C21C521CF00D7947C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE52D34B21C521CF00D7947C /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		DE52D33821C51FA400D7947C /* DailyRate2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyRate2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE52D33C21C51FA400D7947C /* DailyRate2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRate2UITests.swift; sourceTree = "<group>"; };
 		DE52D33E21C51FA400D7947C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE52D34B21C521CF00D7947C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		E49AA1AF84F388CD93E17471 /* Pods-DailyRate2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyRate2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyRate2UITests/Pods-DailyRate2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		E9BF70BE4355A4CE1EC8CD73 /* Pods-DailyRate2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyRate2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyRate2/Pods-DailyRate2.debug.xcconfig"; sourceTree = "<group>"; };
 		F05AF652C93A3E549DBF7D2B /* Pods-DailyRate2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyRate2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyRate2UITests/Pods-DailyRate2UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		DE52D31B21C51FA300D7947C /* DailyRate2 */ = {
 			isa = PBXGroup;
 			children = (
+				DE52D34A21C521BF00D7947C /* Business */,
 				DE52D31C21C51FA300D7947C /* AppDelegate.swift */,
 				DE52D31E21C51FA300D7947C /* ViewController.swift */,
 				DE52D32021C51FA300D7947C /* Main.storyboard */,
@@ -153,6 +156,14 @@
 				DE52D33E21C51FA400D7947C /* Info.plist */,
 			);
 			path = DailyRate2UITests;
+			sourceTree = "<group>";
+		};
+		DE52D34A21C521BF00D7947C /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				DE52D34B21C521CF00D7947C /* Calculator.swift */,
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 		E5AA28E7A0A1AB95A4CA3A0A /* Frameworks */ = {
@@ -306,6 +317,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DailyRate2/Pods-DailyRate2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RSSwizzle/RSSwizzle.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -317,6 +329,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSSwizzle.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -403,6 +416,7 @@
 			files = (
 				DE52D31F21C51FA300D7947C /* ViewController.swift in Sources */,
 				DE52D31D21C51FA300D7947C /* AppDelegate.swift in Sources */,
+				DE52D34C21C521CF00D7947C /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

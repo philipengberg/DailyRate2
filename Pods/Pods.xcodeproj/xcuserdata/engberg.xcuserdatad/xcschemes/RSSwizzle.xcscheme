@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A26150192398A8F54938DAF3B3B3D4B0"
+               BlueprintIdentifier = "D32E97CD80750766294853885A4F18AB"
                BlueprintName = "RSSwizzle"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "RSSwizzle.framework">
